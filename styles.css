@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    --cabecalho: rgb(75, 196, 75);
+    --letras: rgba(8, 8, 8, 0.979);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background-color: var(--cabecalho);
+    position: static;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 25px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(letras);
+    padding: 20px;
+    font-size: 18px;
+}
+
+.nav-list a:hover {
+    color: rgb(255, 255, 255)
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--cabecalho);
+    display: flex;
+    background-image: url(imagens/capa2.png);
+    align-items: center;
+    padding-left: 0%;
+}
+
+.botao {
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(letras);
+    margin-left: 15cm;
+margin-top: 11cm;
+    font-style: italic;
+    transition: 0.8s;
+}
+
+.botao img{
+    vertical-align: middle;
+    width: 2cm;
+}
+
+.botao:hover {
+    transform: scale(1.5);
+}
