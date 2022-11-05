@@ -22,6 +22,70 @@ html {
     scroll-behavior: smooth;
 }
 
+.column {
+    flex-grow: 1;
+    width: 31%;
+    margin-top: 3cm;
+    margin-left: 24cm;
+}
+
+.login-panel {
+    background-color: var(--cabecalho);
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.login-panel h1 {
+    padding-bottom: 20px;
+
+}
+
+.text {
+    padding-right: 39%;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btnEnviar {
+    /* Largura do botão */
+    width: 250px;
+    /* Margem referente a parte de cima */
+    margin-top: 10px;
+    /* Altura do botão */
+    height: 30px;
+    /* Retirar borda */
+    border: 0;
+    /* Cor do Fundo */
+    background-color: #0095f6;
+    /* Arredondamento do botão */
+    border-radius: 9px;
+    /* Cor da letra */
+    color: #FFF;
+    /*Tamanho da Letra*/
+    font-size: 16px;
+    /* Negrito  */
+    font-weight: bold;
+    /* Altura da parte de baixo */
+    margin-bottom: 10px;
+    /* Ficar com a mão como fosse para clicar */
+    cursor: pointer;
+
+}
+
+.login-panel {
+    display: center;
+}
+
+.right {
+    padding-left: 10px;
+}
+
+.nav-img {
+    margin-right: 4cm;
+}
+
 .nav {
     background-color: var(--cabecalho);
     position: static;
@@ -69,12 +133,12 @@ html {
     font-size: 25px;
     color: var(letras);
     margin-left: 15cm;
-margin-top: 11cm;
+    margin-top: 11cm;
     font-style: italic;
     transition: 0.8s;
 }
 
-.botao img{
+.botao img {
     vertical-align: middle;
     width: 2cm;
 }
