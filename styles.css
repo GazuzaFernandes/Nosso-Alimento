@@ -167,8 +167,9 @@ html {
     justify-content: center;
     align-items: center;
 }
+
 .cestaBasica-lisst img{
-    width: 30%; 
+    width: 35%; 
     margin-top: 20px;
     margin-right: 35px;
     opacity: 0.9;
@@ -176,7 +177,6 @@ html {
     border-radius: 10px;
     vertical-align: middle;
 }
-
 
 .cestaBasica-list img{
     width: 20%; 
