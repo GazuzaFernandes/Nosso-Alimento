@@ -26,7 +26,7 @@ html {
     flex-grow: 1;
     width: 31%;
     margin-top: 1cm;
-    margin-left: 24cm;
+    margin-left: 2cm;
 }
 
 .login-panel {
@@ -39,7 +39,6 @@ html {
 
 .login-panel h1 {
     padding-bottom: 20px;
-
 }
 
 .text {
@@ -80,14 +79,15 @@ html {
 }
 
 .right {
-    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nav-img {
     margin-right: 2cm;
 }
-.titulo-cesta{
-   line-height: 50px; 
+
+.titulo-cesta {
+    line-height: 50px;
 }
 
 .nav {
@@ -126,7 +126,7 @@ html {
     display: flex;
     background-image: url(imagens/capa2.png);
     align-items: center;
-    padding-left: 0%;
+    padding-left: 1%;
 }
 
 .botao {
@@ -151,7 +151,7 @@ html {
     transform: scale(1.5);
 }
 
-.cestabasica{
+.cestabasica {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -160,7 +160,7 @@ html {
     padding: 40px 0;
 }
 
-.cestaBasica-list{
+.cestaBasica-list {
     margin: 1 3%;
     margin-bottom: 9px;
     display: flex;
@@ -168,8 +168,8 @@ html {
     align-items: center;
 }
 
-.cestaBasica-lisst img{
-    width: 35%; 
+.cestaBasica-lisst img {
+    width: 35%;
     margin-top: 20px;
     margin-right: 35px;
     opacity: 0.9;
@@ -178,8 +178,8 @@ html {
     vertical-align: middle;
 }
 
-.cestaBasica-list img{
-    width: 20%; 
+.cestaBasica-list img {
+    width: 20%;
     margin-top: 20px;
     margin-right: 35px;
     opacity: 0.9;
@@ -188,36 +188,201 @@ html {
     vertical-align: middle;
 }
 
-.cestaBasica-list img:hover, .cestaBasica-lisst img:hover{
+.cestaBasica-list img:hover,
+
+.cestaBasica-lisst img:hover {
     opacity: 1;
     transform: scale(1.1);
 }
 
-.btnBotao{
- border: 0;
- border-radius: 8px;
- cursor: pointer;
- font-size: 30px;
-background-color: #FFF;
- color: var(--letras);
- transition: 0.8s;
- font-weight: bold;
- margin-left: center;
- margin-top: center;
- font-style: italic;
+.btnBotao {
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: #FFF;
+    color: var(--letras);
+    transition: 0.8s;
+    font-weight: bold;
+    margin-left: center;
+    margin-top: center;
+    font-style: italic;
 }
 
-.btnBotao img{
+.btnBotao img {
     vertical-align: middle;
-   
+
 }
 
-.btnBotao:hover{
+.btnBotao:hover {
     transform: scale(1.9);
 }
 
-.endereco img{
+.contato img {
     display: flex;
     margin-top: -12cm;
-    margin-left: 2cm;
+    margin-left: 15cm;
+}
+
+@media (max-width: 1050px) {
+    .nav {
+        flex-direction: row;
+        padding: 0;
+        align-items: flex-start;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .contato img {
+        width: 80%;
+        margin-top: 1cm;
+        margin-left: 3cm;
+    }
+
+    .login-panel {
+        background-color: var(--cabecalho);
+        border: 1px solid #e6e6e6;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+
+    .column {
+        flex-grow: 1;
+        width: 60%;
+        margin-top: 1cm;
+        margin-left: 5cm;
+    }
+
+    .nav-list {
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        height: 10%;
+        width: 100%;
+        line-height: 1cm;
+    }
+
+    .nav-list a {
+        margin-left: 10px;
+        margin-top: 10px;
+        max-width: 500px;
+    }
+
+    .sobre h1 {
+        margin-left: 10px;
+        padding-top: 5cm;
+    }
+
+    .main {
+        background-size: auto 50%;
+    }
+
+    .main button,    a {
+        margin-bottom: 1cm;
+        margin-left: 1cm;
+    }
+
+    .cestabasica h1 {
+        margin-bottom: 10px;
+        margin-left: 15px;
+        padding: center;
+    }
+
+    .titulo img {
+        max-width: 500px;
+        border: 10px;
+    }
+
+    .cestaBasica-list img {
+        margin: 0;
+        width: 25%;
+    }
+
+    .endereco {
+        margin-bottom: 30cm;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav {
+        flex-direction: row;
+        padding: 0;
+        align-items: flex-start;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .contato img {
+        width: 80%;
+        margin-left: 3cm;
+      margin-top: 1cm;
+    }
+
+    .login-panel {
+        background-color: var(--cabecalho);
+        border: 1px solid #e6e6e6;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+
+    .column {
+        flex-grow: 1;
+        width: 65%;
+        margin-top: 1cm;
+        margin-left: 4cm;
+    }
+
+    .nav-list {
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        height: 10%;
+        width: 100%;
+        line-height: 1cm;
+    }
+
+    .nav-list a {
+        margin-left: 10px;
+        margin-top: 10px;
+        max-width: 500px;
+    }
+
+    .sobre h1 {
+        margin-left: 10px;
+        padding-top: 5cm;
+    }
+
+    .main {
+        background-size: auto 50%;
+    }
+
+    .main button,    a {
+        margin-bottom: 1cm;
+        margin-left: 1cm;
+    }
+
+    .cestabasica h1 {
+        margin-bottom: 10px;
+        margin-left: 15px;
+        padding: center;
+    }
+
+    .titulo img {
+        max-width: 500px;
+        border: 10px;
+    }
+
+    .cestaBasica-list img {
+        margin: 0;
+        width: 25%;
+    }
+
+    .endereco {
+        margin-bottom: 30cm;
+    }
+
+
+
 }
