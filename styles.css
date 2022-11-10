@@ -136,10 +136,11 @@ html {
     font-weight: bold;
     font-size: 25px;
     color: var(letras);
-    margin-left: 15cm;
-    margin-top: 11cm;
+    margin-left: 16cm;
+    margin-bottom: 11cm;    
     font-style: italic;
     transition: 0.8s;
+    background-color: #FFF;
 }
 
 .botao img {
