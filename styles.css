@@ -86,6 +86,11 @@ html {
     margin-right: 2cm;
 }
 
+.img-inicio {
+    margin-right: 7cm;
+    width: 20%;
+}
+
 .titulo-cesta {
     line-height: 50px;
 }
@@ -100,6 +105,7 @@ html {
     justify-content: flex-end;
     z-index: 999;
 }
+
 
 .nav-list {
     display: flex;
@@ -137,11 +143,32 @@ html {
     font-size: 25px;
     color: var(letras);
     margin-left: 16cm;
-    margin-bottom: 11cm;    
+    margin-bottom: 11cm;
     font-style: italic;
     transition: 0.8s;
     background-color: #FFF;
 }
+
+.sanduiche {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 36px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    display: none;
+}
+
+.sanduiche:hover {
+    cursor: pointer;
+    opacity: .8;
+    background-color: #FFF;
+}
+
+
+
+
 
 .botao img {
     vertical-align: middle;
@@ -234,6 +261,10 @@ html {
         max-width: 100%;
     }
 
+    .sanduiche {
+        display: flex;
+    }
+
     .contato img {
         width: 80%;
         margin-top: 1cm;
@@ -258,16 +289,16 @@ html {
     .nav-list {
         text-align: center;
         flex-direction: column;
-        margin: 0;
-        height: 10%;
+        margin-left: 5cm;
+        height: 15%;
         width: 100%;
         line-height: 1cm;
     }
 
     .nav-list a {
-        margin-left: 10px;
-        margin-top: 10px;
-        max-width: 500px;
+        margin-left: 25cm;
+        margin-top: 20cm;
+        max-width: 50px;
     }
 
     .sobre h1 {
@@ -279,7 +310,8 @@ html {
         background-size: auto 50%;
     }
 
-    .main button,    a {
+    .main button,
+    a {
         margin-bottom: 1cm;
         margin-left: 1cm;
     }
@@ -317,7 +349,7 @@ html {
     .contato img {
         width: 80%;
         margin-left: 3cm;
-      margin-top: 1cm;
+        margin-top: 1cm;
     }
 
     .login-panel {
@@ -345,8 +377,9 @@ html {
     }
 
     .nav-list a {
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 10cm;
         max-width: 500px;
     }
 
@@ -359,7 +392,8 @@ html {
         background-size: auto 50%;
     }
 
-    .main button,    a {
+    .main button,
+    a {
         margin-bottom: 1cm;
         margin-left: 1cm;
     }
