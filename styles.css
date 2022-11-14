@@ -22,13 +22,97 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Inicio Index.html */
+.nav-img {
+    margin-right: 2cm;
+}
+.nav {
+    background-color: var(--cabecalho);
+    position: static;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 25px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: var(letras);
+    padding: 20px;
+    font-size: 18px;
+}
+.nav-list a:hover {
+    color: rgb(255, 255, 255)
+}
+.main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--cabecalho);
+    display: flex;
+    background-image: url(imagens/capa2.png);
+    align-items: center;
+    padding-left: 1%;
+}
+/* Fim Index.html */
+
+/* Inicio CestaBasica.html */
+.efeito {
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+
+    transition: all 400ms ease;
+}
+.efeito-1:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 5cm;
+    cursor: pointer;
+    background-image: url(imagens/produtos.png);
+    transition: all 1s ease;
+}
+.efeito-2:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 5cm;
+    cursor: pointer;
+    background-image: url(imagens/InstCabecalho.png);
+    transition: all 1s ease;
+}
+.efeito-2:hover:before {
+    width: 100%;
+}
+.efeito-1:hover:before {
+    width: 100%;
+}
+.img-cesta {
+    padding-top: 10px;
+    padding-left: 5cm;
+}
+/* Fim CestaBasica.html */
+
+/* Inicio contato.html */
 .column {
     flex-grow: 1;
     width: 31%;
     margin-top: 1cm;
     margin-left: 2cm;
 }
-
 .login-panel {
     background-color: var(--cabecalho);
     border: 1px solid #e6e6e6;
@@ -36,18 +120,15 @@ html {
     padding: 30px 0;
     margin-top: 20px;
 }
-
 .login-panel h1 {
     padding-bottom: 20px;
 }
-
 .text {
     padding-right: 39%;
     padding-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
 }
-
 .btnEnviar {
     /* Largura do botão */
     width: 250px;
@@ -73,156 +154,12 @@ html {
     cursor: pointer;
 
 }
-
 .login-panel {
     display: center;
 }
-
 .right {
     padding-right: 10px;
 }
-
-.nav-img {
-    margin-right: 2cm;
-}
-
-.img-inicio {
-    margin-right: 7cm;
-    width: 20%;
-}
-
-.titulo-cesta {
-    line-height: 50px;
-}
-
-.nav {
-    background-color: var(--cabecalho);
-    position: static;
-    top: 0;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 999;
-}
-
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin-right: 25px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: var(letras);
-    padding: 20px;
-    font-size: 18px;
-}
-
-.nav-list a:hover {
-    color: rgb(255, 255, 255)
-}
-
-.main {
-    width: 100%;
-    height: calc(100vh - 80px);
-    background-color: var(--cabecalho);
-    display: flex;
-    background-image: url(imagens/capa2.png);
-    align-items: center;
-    padding-left: 1%;
-}
-
-.botao {
-    cursor: pointer;
-    border: 0;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 25px;
-    color: var(letras);
-    margin-left: 16cm;
-    margin-bottom: 11cm;
-    font-style: italic;
-    transition: 0.8s;
-    background-color: #FFF;
-}
-
-.sanduiche {
-    background-color: transparent;
-    border: none;
-    color: #FFF;
-    font-size: 36px;
-    right: 10px;
-    top: 10px;
-    position: absolute;
-    display: none;
-}
-
-.sanduiche:hover {
-    cursor: pointer;
-    opacity: .8;
-    background-color: #FFF;
-}
-
-
-
-
-
-.botao img {
-    vertical-align: middle;
-    width: 2cm;
-}
-
-.botao:hover {
-    transform: scale(1.5);
-}
-
-.cestabasica {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
-}
-
-.cestaBasica-list {
-    margin: 1 3%;
-    margin-bottom: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cestaBasica-lisst img {
-    width: 35%;
-    margin-top: 20px;
-    margin-right: 35px;
-    opacity: 0.9;
-    transition: 0.9s;
-    border-radius: 10px;
-    vertical-align: middle;
-}
-
-.cestaBasica-list img {
-    width: 20%;
-    margin-top: 20px;
-    margin-right: 35px;
-    opacity: 0.9;
-    transition: 0.9s;
-    border-radius: 10px;
-    vertical-align: middle;
-}
-
-.cestaBasica-list img:hover,
-
-.cestaBasica-lisst img:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
-
 .btnBotao {
     border: 0;
     border-radius: 8px;
@@ -236,23 +173,23 @@ html {
     margin-top: center;
     font-style: italic;
 }
-
 .btnBotao img {
     vertical-align: middle;
 
 }
-
 .btnBotao:hover {
     transform: scale(1.9);
 }
-
 .contato img {
     display: flex;
     margin-top: -12cm;
     margin-left: 15cm;
 }
+/* Fim contato.html */
 
-@media (max-width: 1050px) {
+
+
+@media (max-width: 750px) {
     .nav {
         flex-direction: row;
         padding: 0;
@@ -268,7 +205,7 @@ html {
     .contato img {
         width: 80%;
         margin-top: 1cm;
-        margin-left: 3cm;
+        margin-left: 1cm;
     }
 
     .login-panel {
@@ -288,23 +225,18 @@ html {
 
     .nav-list {
         text-align: center;
-        flex-direction: column;
-        margin-left: 5cm;
+        flex-direction: row;
+        margin-left: 5px;
         height: 15%;
         width: 100%;
         line-height: 1cm;
     }
 
     .nav-list a {
-        margin-left: 25cm;
-        margin-top: 20cm;
+        margin-left: 5px;
+        margin-top: 5px;
         max-width: 50px;
-    }
-
-    .sobre h1 {
-        margin-left: 10px;
-        padding-top: 5cm;
-    }
+    }  
 
     .main {
         background-size: auto 50%;
@@ -337,87 +269,3 @@ html {
     }
 }
 
-@media (max-width: 750px) {
-    .nav {
-        flex-direction: row;
-        padding: 0;
-        align-items: flex-start;
-        height: 100%;
-        max-width: 100%;
-    }
-
-    .contato img {
-        width: 80%;
-        margin-left: 3cm;
-        margin-top: 1cm;
-    }
-
-    .login-panel {
-        background-color: var(--cabecalho);
-        border: 1px solid #e6e6e6;
-        text-align: center;
-        padding: 30px 0;
-        margin-top: 20px;
-    }
-
-    .column {
-        flex-grow: 1;
-        width: 65%;
-        margin-top: 1cm;
-        margin-left: 4cm;
-    }
-
-    .nav-list {
-        text-align: center;
-        flex-direction: column;
-        margin: 0;
-        height: 10%;
-        width: 100%;
-        line-height: 1cm;
-    }
-
-    .nav-list a {
-        margin-right: 50px;
-        margin-left: 50px;
-        margin-top: 10cm;
-        max-width: 500px;
-    }
-
-    .sobre h1 {
-        margin-left: 10px;
-        padding-top: 5cm;
-    }
-
-    .main {
-        background-size: auto 50%;
-    }
-
-    .main button,
-    a {
-        margin-bottom: 1cm;
-        margin-left: 1cm;
-    }
-
-    .cestabasica h1 {
-        margin-bottom: 10px;
-        margin-left: 15px;
-        padding: center;
-    }
-
-    .titulo img {
-        max-width: 500px;
-        border: 10px;
-    }
-
-    .cestaBasica-list img {
-        margin: 0;
-        width: 25%;
-    }
-
-    .endereco {
-        margin-bottom: 30cm;
-    }
-
-
-
-}
