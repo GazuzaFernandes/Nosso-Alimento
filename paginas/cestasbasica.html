@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500;1,700&display=swap"
@@ -20,7 +22,6 @@
 <body>
     <!-- #region Cabeçalho-->
     <nav class="nav">
-       
         <ul class="nav-list">
             <li>
                 <a href="../index.html">Inicio</a>
@@ -45,34 +46,125 @@
     <!-- #endregion -->
 
     <!-- #region Atendimento-->
-    <div class="img-cesta">
-        <a href="#">
-            <button class="efeito efeito-1">          
-                <img src="../imagens/ModeloPadrao.png" alt="Erro">          
-            </button>           
-        </a>  
-        <a href="#">
-            <button class="efeito efeito-2">          
-                <img src="../imagens/Modelo2.png" alt="Erro">          
-            </button>           
-        </a>   
+    <div class="container">
+
+        <div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modelopadrao">
+                <img class="img-cestas" src="../imagens/lista/modelopadrao(2).png" alt="Erro">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modelopadrao" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <a href="https://api.whatsapp.com/send?phone=551128841045&text=Boas-vindas%20a%20Nosso%20Alimento!%20O%20que%20eu%20posso%20fazer%20por%20voc%C3%AA%20hoje%3F             "
+                            target="_blank">
+                            <p>Orçamento</p>
+                        </a>
+                        <div class="modal-for">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                <img class="lista-img" src="../imagens/lista/modelopadrao.png" alt="Erro">
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+
+        <div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modelo2">
+                <img class="img-cestas" src="../imagens/lista/modelo2(2).png" alt="Erro">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modelo2" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <a href="https://api.whatsapp.com/send?phone=551128841045&text=Boas-vindas%20a%20Nosso%20Alimento!%20O%20que%20eu%20posso%20fazer%20por%20voc%C3%AA%20hoje%3F             "
+                            target="_blank">
+                            <p>Orçamento</p>
+                        </a>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                <img class="lista-img" src="../imagens/lista/modelo2.png" alt="Erro">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modelo3">
+                <img class="img-cestas" src="../imagens/lista/modelo3(2).png" alt="Erro">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modelo3" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <a href="https://api.whatsapp.com/send?phone=551128841045&text=Boas-vindas%20a%20Nosso%20Alimento!%20O%20que%20eu%20posso%20fazer%20por%20voc%C3%AA%20hoje%3F             "
+                            target="_blank">
+                            <p>Orçamento</p>
+                        </a>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                <img class="lista-img" src="../imagens/lista/modelo3.png" alt="Erro">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modelo4">
+                <img class="img-cestas" src="../imagens/lista/modelo4(2).png" alt="Erro">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modelo4" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <a href="https://api.whatsapp.com/send?phone=551128841045&text=Boas-vindas%20a%20Nosso%20Alimento!%20O%20que%20eu%20posso%20fazer%20por%20voc%C3%AA%20hoje%3F             "
+                            target="_blank">
+                            <p>Orçamento</p>
+                        </a>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                <img class="lista-img" src="../imagens/lista/modelo4.png" alt="Erro">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modelo5">
+                <img class="img-cestas" src="../imagens/lista/modelo5(2).png" alt="Erro">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modelo5" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <a href="https://api.whatsapp.com/send?phone=551128841045&text=Boas-vindas%20a%20Nosso%20Alimento!%20O%20que%20eu%20posso%20fazer%20por%20voc%C3%AA%20hoje%3F             "
+                            target="_blank">
+                            <p>Orçamento</p>
+                        </a>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                <img class="lista-img" src="../imagens/lista/modelo5.png" alt="Erro">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="img-cesta">
-        <a href="#">
-            <button class="efeito efeito-3">          
-                <img src="../imagens/Modelo3.png" alt="Erro">          
-            </button>           
-        </a>  
-        <a href="#">
-            <button class="efeito efeito-4">          
-                <img src="../imagens/Modelo4.png" alt="Erro">          
-            </button>           
-        </a>   
-    </div>
-
-
-
-    <!-- #endregion -->
 </body>
-
 </html>

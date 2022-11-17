@@ -26,6 +26,7 @@ html {
 .nav-img {
     margin-right: 2cm;
 }
+
 .nav {
     background-color: var(--cabecalho);
     position: static;
@@ -36,21 +37,25 @@ html {
     justify-content: flex-end;
     z-index: 999;
 }
+
 .nav-list {
     display: flex;
     align-items: center;
     list-style: none;
     margin-right: 25px;
 }
+
 .nav-list a {
     text-decoration: none;
     color: var(letras);
     padding: 20px;
     font-size: 18px;
 }
+
 .nav-list a:hover {
     color: rgb(255, 255, 255)
 }
+
 .main {
     width: 100%;
     height: calc(100vh - 80px);
@@ -60,49 +65,60 @@ html {
     align-items: center;
     padding-left: 1%;
 }
+
 /* Fim Index.html */
 
 /* Inicio CestaBasica.html */
-.efeito {
-    border: none;
-    padding: 5px;
-    margin: 10px;
-    position: relative;
-    box-sizing: border-box;
+.container {
+    margin-top: 3cm;
+    margin-bottom: 1cm;
+        display: flex;
+    flex-direction: row;
+    padding-right: 20px;
 
-    transition: all 400ms ease;
 }
-.efeito-1:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0px;
-    height: 5cm;
-    cursor: pointer;
-    background-image: url(imagens/produtos.png);
-    transition: all 1s ease;
-}
-.efeito-2:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0px;
-    height: 5cm;
-    cursor: pointer;
-    background-image: url(imagens/InstCabecalho.png);
-    transition: all 1s ease;
-}
-.efeito-2:hover:before {
+
+.img-cestas {
     width: 100%;
 }
-.efeito-1:hover:before {
+
+.lista-img {
     width: 100%;
 }
-.img-cesta {
-    padding-top: 10px;
-    padding-left: 5cm;
+
+.modal-footer {
+    display: flex;  
+}
+
+.modal{
+    margin-right: 15cm;    
+}
+
+.modal-content p{
+    margin-left: 2cm;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.modal{
+  justify-content: center;
+}
+
+.btn-info {
+    background-color: var(--cabecalho);
+    display: flex;
+    padding-right: -20px;
+    height: 5cm;
+    width: 5cm;
+    margin-right: 2cm;
+    transition: .5s;
+}
+.btn-info:hover{
+    transform: scale(1.9);
+}
+
+.button{
+    display: inline-block;
 }
 /* Fim CestaBasica.html */
 
@@ -113,6 +129,7 @@ html {
     margin-top: 1cm;
     margin-left: 2cm;
 }
+
 .login-panel {
     background-color: var(--cabecalho);
     border: 1px solid #e6e6e6;
@@ -120,15 +137,18 @@ html {
     padding: 30px 0;
     margin-top: 20px;
 }
+
 .login-panel h1 {
     padding-bottom: 20px;
 }
+
 .text {
     padding-right: 39%;
     padding-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
 }
+
 .btnEnviar {
     /* Largura do botão */
     width: 250px;
@@ -154,12 +174,15 @@ html {
     cursor: pointer;
 
 }
+
 .login-panel {
     display: center;
 }
+
 .right {
     padding-right: 10px;
 }
+
 .btnBotao {
     border: 0;
     border-radius: 8px;
@@ -173,23 +196,25 @@ html {
     margin-top: center;
     font-style: italic;
 }
+
 .btnBotao img {
     vertical-align: middle;
 
 }
+
 .btnBotao:hover {
     transform: scale(1.9);
 }
+
 .contato img {
     display: flex;
     margin-top: -12cm;
     margin-left: 15cm;
 }
+
 /* Fim contato.html */
 
-
-
-@media (max-width: 750px) {
+@media (max-width: 1050px) {
     .nav {
         flex-direction: row;
         padding: 0;
@@ -236,7 +261,7 @@ html {
         margin-left: 5px;
         margin-top: 5px;
         max-width: 50px;
-    }  
+    }
 
     .main {
         background-size: auto 50%;
@@ -268,4 +293,3 @@ html {
         margin-bottom: 30cm;
     }
 }
-
