@@ -237,8 +237,32 @@ html {
     margin-top: -12cm;
     margin-left: 15cm;
 }
+footer {
+    width: 100%;
+    background-color: var(--cabecalho);
+    margin-top: 3cm;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    color: var(--letras);
+}
 
+footer h3 {
+    text-align: center;
+    text-decoration: none;
+    color: var(--letras);
+}
+
+footer p {
+    margin-left: 25px;
+    color: #ececec;
+}
+
+.contato {
+    color: rgb(12, 12, 12)
+}
 /* Fim contato.html */
+
 
 @media (max-width: 1050px) {
     .nav {
