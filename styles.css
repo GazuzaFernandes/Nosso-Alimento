@@ -56,14 +56,13 @@ html {
     color: rgb(255, 255, 255)
 }
 
-.main {
+.main img{
     width: 100%;
     height: calc(100vh - 80px);
     background-color: var(--cabecalho);
     display: flex;
-    background-image: url(imagens/capa2.png);
     align-items: center;
-    padding-left: 1%;
+ 
 }
 
 /* Fim Index.html */
@@ -144,16 +143,41 @@ html {
     padding-bottom: 20px;
 }
 
-.text {
-    padding-right: 39%;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
+.contato textarea {
+  
+    font-size: 15px;
+
 }
 
 .btnEnviar {
     /* Largura do botão */
-    width: 250px;
+    width: 150px;
+    /* Margem referente a parte de cima */
+    margin-top: 0px;
+    /* Altura do botão */
+    height: 35px;
+    /* Retirar borda */
+    border: 0;
+    /* Cor do Fundo */
+    background-color: #f5f5f5;
+    /* Arredondamento do botão */
+    border-radius: 9px;
+    /* Cor da letra */
+    color: rgb(8, 8, 8);
+    /*Tamanho da Letra*/
+    font-size: 16px;
+    /* Negrito  */
+    font-weight: bold;
+    /* Altura da parte de baixo */
+    margin-bottom: 10px;
+    /* Ficar com a mão como fosse para clicar */
+    cursor: pointer;
+
+}
+
+.Limpar {
+    /* Largura do botão */
+    width: 150px;
     /* Margem referente a parte de cima */
     margin-top: 0px;
     /* Altura do botão */
@@ -230,6 +254,7 @@ html {
         margin-top: 1cm;
         margin-left: 1cm;
     }
+
     .login-panel {
         background-color: var(--cabecalho);
         border: 1px solid #e6e6e6;
@@ -248,7 +273,7 @@ html {
     .nav-list {
         text-align: center;
         flex-direction: row;
-        margin-left: 5px;
+        margin-left: 1cm;
         height: 15%;
         width: 100%;
         line-height: 1cm;
@@ -264,16 +289,9 @@ html {
         background-size: auto 50%;
     }
 
-    .main button,
-    a {
+    .main button, a {
         margin-bottom: 1cm;
         margin-left: 1cm;
-    }
-
-    .cestabasica h1 {
-        margin-bottom: 10px;
-        margin-left: 15px;
-        padding: center;
     }
 
     .titulo img {
@@ -281,12 +299,91 @@ html {
         border: 10px;
     }
 
-    .cestaBasica-list img {
-        margin: 0;
-        width: 25%;
+    .btn-info {
+        background-color: var(--cabecalho);
+        display: flex;
+        padding-right: -20px;
+        height: 8cm;
+        width: 6cm;
+        margin-right: 8px;
+        transition: .5s;
+    }
+    
+    .btn-info:hover {
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width: 412px) {
+
+    .nav {
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+        height: 100%;
+        max-width: 100%;
+    }
+    .nav-list {
+        text-align: center;
+        flex-direction: column;
+        margin-left: 0;
+        height: 1%;
+        width: 100%;
+        line-height: 1cm;
     }
 
-    .endereco {
-        margin-bottom: 30cm;
+    .nav-list a {
+        margin-left: 5px;
+        margin-top: 5px;
+        max-width: 50px;
+    }
+
+    .contato img {
+        width: 80%;
+        margin-top: 1cm;
+        margin-left: 1cm;
+    }
+
+    .login-panel {
+        background-color: var(--cabecalho);
+        border: 1px solid #e6e6e6;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+
+    .column {
+        flex-grow: 1;
+        width: 90%;
+        margin-top: 1cm;
+        margin-left: 1cm;
+    }
+
+    .main {
+        background-size: auto 50%;
+    }
+
+    .main button, a {
+        margin-bottom: 1cm;
+        margin-left: 1cm;
+    }
+
+    .titulo img {
+        max-width: 500px;
+        border: 10px;
+    }
+
+    .btn-info {
+        background-color: var(--cabecalho);
+        display: flex;
+        padding-right: -20px;
+        height: 3cm;
+        width: 2.5cm;
+        margin-right: 8px;
+        transition: .5s;
+    }
+    
+    .btn-info:hover {
+        transform: scale(1.1);
     }
 }
