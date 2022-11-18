@@ -16,21 +16,20 @@
     <title>Contatos</title>
 
 </head>
+
 <body>
     <!-- #region Cabeçalho-->
     <nav class="nav">
-      
         <ul class="nav-list">
             <li>
                 <a href="../index.html">Inicio</a>
-            </li>    
+            </li>
             <li>
                 <a href="cestasbasica.html">Cestas Basicas</a>
-            </li>       
+            </li>
             <li>
                 <a href="contato.html">Contato</a>
             </li>
-
             <li class="nav-redes">
                 <a href="https://api.whatsapp.com/send?phone=551128841045&text=Boas-vindas%20a%20Nosso%20Alimento!%20O%20que%20eu%20posso%20fazer%20por%20voc%C3%AA%20hoje%3F             "
                     target="_blank">
@@ -38,7 +37,6 @@
                 <a href="https://www.instagram.com/nosso_alimento/" target="_blank">
                     <img src="../imagens/InstCabecalho.png" alt="instagram"></a>
             </li>
-
         </ul>
     </nav>
     <!-- #endregion -->
@@ -48,22 +46,20 @@
         <div class="column right">
             <div class="login-panel">
                 <h1>Envie sua mensagem</h1>
-                <form>
-                    <input class="text" placeholder="Nome" type="text" name="Nome"><br>
-                    <input class="text" placeholder="E-mail" type="text" name="E-mail"><br>
-                    <input class="text" placeholder="Telefone" type="text" name="Telefone"><br>
-                    <input class="text" placeholder="Assunto" type="text" name="Assunto"><br>
-                    <textarea class="text" name="mensagem" cols="20" rows="5"
-                        placeholder="Insira sua mensagem"></textarea><br><br>
-                    <input class="btnEnviar" type="submit" value="Enviar" />
+                <form action="https://formsubmit.co/5ab7388764019d6dbb66270d493b8a68" method="POST" target="_blank">
+                    <textarea placeholder="Informe o seu nome:" name="Nome" cols="45" rows="2"></textarea>
+                    <textarea placeholder="Informe o E-mail:" name="Nome" cols="45" rows="2"></textarea>
+                    <textarea placeholder="Telefone:" name="Nome" cols="45" rows="2"></textarea>
+                    <textarea placeholder="Assunto:" name="Nome" cols="45" rows="2"></textarea>
+                    <textarea class="text" name="mensagem" cols="19" rows="7" placeholder="Insira sua mensagem:"
+                        required></textarea>
+                    <button class="btnEnviar" type="submit">Enviar</button>
                 </form>
             </div>
-
         </div>
         <img src="../imagens/endereço.png" alt="">
     </div>
-
-   
+    <!-- #endregion -->
 </body>
 
 </html>
